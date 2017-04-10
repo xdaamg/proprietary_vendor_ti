@@ -1,7 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_BOARD_PLATFORM),omap4)
-ifneq ($(filter acclaim espresso3g espressowifi maguro maserati p3100 p3110 p5100 p5110 spyder targa tuna toro toroplus umts_spyder,$(TARGET_DEVICE)),)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libglslcompiler
@@ -156,5 +155,4 @@ LOCAL_STRIP_MODULE := $(ANDROID_API_MM_OR_LATER)
 LOCAL_PACK_MODULE_RELOCATIONS := true
 include $(BUILD_PREBUILT)
 
-endif
 endif
